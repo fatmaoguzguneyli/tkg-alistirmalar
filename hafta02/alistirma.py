@@ -44,11 +44,19 @@ def harf_say(metin, harf):
 # n! = 1 * 2 * 3 * ... * n değerini bir döngüyle hesaplayın. 0! = 1'dir.
 # Örnek: faktoriyel(5) -> 120
 def faktoriyel(n):
-    pass
+    a=1
+    for i in range(1,n+1):
+        a=i*a
+    return a
+
 
 
 # 5. Geçenler
 # Nottan 60 ve üzeri olanları, sıralarını bozmadan yeni bir liste olarak döndürün.
 # Örnek: gecenler([70, 45, 90]) -> [70, 90]
 def gecenler(notlar):
-    pass
+    liste =[]
+    for i in range(len(notlar)):
+        if notlar[i]>=60:
+            liste.append(notlar[i])
+    return liste
